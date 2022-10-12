@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="toaststyle">
+        <item name="stTextColor">@color/red</item>
+        <item name="stTextSize">12sp</item>
+        <item name="stColorBackground">@color/white</item>
+        <item name="stStrokeWidth">2dp</item>
+        <item name="stStrokeColor">@color/red</item>
+        <item name="stIconStart">@drawable/ic_cross</item>
+        <item name="stLength">SHORT</item>
+    </style>
+    
+</resources>

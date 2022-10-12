@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainPageLayout"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/textSwapFlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Btn_On_Off"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="Back Flash"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/Btn_On_Off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:rotation="-90"
+
+        android:scaleX="3"
+        android:scaleY="3"
+        />
+
+    <TextView
+        android:id="@+id/textOnOff"
+        android:text="OFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/Btn_On_Off"
+        android:layout_marginTop="55dp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/SwapFlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textOnOff"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:src="@drawable/ic_back_image" />
+
+    <Button
+        android:id="@+id/SOS_Button"
+        android:text="SOS"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SwapFlash"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:background="@drawable/sos_btn_style"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/sosAnimation"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/sos_animation"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

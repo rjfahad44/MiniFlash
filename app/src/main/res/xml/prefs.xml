@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+        <CheckBoxPreference
+            android:title="Show SOS"
+            android:key="S_SOS"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:title="Button Sound"
+            android:key="S_BUTTON_SOUND"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:title="Flashlight"
+            android:summary="Version 1.1" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Follow us">
+        <Preference
+            android:title="Facebook"
+            android:key="S_FACEBOOK"/>
+        <Preference
+            android:title="Twitter"
+            android:key="S_TWITTER"/>
+        <Preference
+            android:title="Instagram"
+            android:key="S_INSTAGRAM"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

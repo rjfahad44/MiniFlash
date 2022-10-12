@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/ic_vert">
+        <menu>
+            <group>
+                <item android:id="@+id/RateUs"
+                    android:icon="@drawable/ic_rateus_me"
+                    android:title="Rateus"
+                    app:showAsAction="never" />
+                <item android:id="@+id/MoreApp"
+                    android:icon="@drawable/ic_moreapp"
+                    android:title="More App"
+                    app:showAsAction="never" />
+                <item android:id="@+id/About"
+                    android:icon="@drawable/ic_about"
+                    android:title="About"
+                    app:showAsAction="never" />
+                <item android:id="@+id/Setting"
+                    android:icon="@drawable/ic_setting"
+                    android:title="Setting"
+                    app:showAsAction="never" />
+            </group>
+            <item android:id="@+id/Exit"
+                android:icon="@drawable/ic_exit"
+                android:title="Exit"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

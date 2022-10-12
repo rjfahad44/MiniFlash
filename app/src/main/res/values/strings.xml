@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Flash Light</string>
+    <string name="about_text">
+        This is my flash light app.
+        this app version is 1.1v
+    </string>
+</resources>
